@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # Assuming the CSV file is in the same directory as your Python scrip
 
 # Load the CSV file into a DataFrame
-df = pd.read_csv("C:/Users/20225009/Documents/Data Challenge 2/Code/Datasets/pas_dataset_boroughs.csv", header = 0)
+df = pd.read_csv("pas_dataset_boroughs.csv", header = 0)
 
 #dropping empty columns
 df = df.drop(columns=['Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9'])
@@ -36,4 +36,4 @@ filtered_df_local.set_index('Date', inplace=True)
 filtered_df_local.groupby('Borough')['Proportion'].plot(legend=True)
 plt.title("Good Job done locally over the years")
 plt.show()
-plt.savefig("boroughs_local_change")
+#plt.savefig("boroughs_local_change")
