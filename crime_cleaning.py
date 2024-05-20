@@ -47,8 +47,8 @@ def display_top_values(file_name):
 
     # Loop through each column in the dataframe
     for column in df.columns:
-        # Get the top 7 most frequent values and their counts
-        top_values[column] = df[column].value_counts().head(20)
+        # Get the top 10 most frequent values and their counts
+        top_values[column] = df[column].value_counts().head(15)
 
     return top_values
 
@@ -94,9 +94,6 @@ def clean_cols_and_rows2(file):
 
     return df
 
-street_path = 'data/crime_data/2010-2024/metropolitan-street-data.csv'
-outcomes_path = 'data/crime_data/2010-2024/metropolitan-outcomes-data.csv'
 
-clean_street = (clean_cols_and_rows(street_path)).to_csv("metropolitan_street_data.csv", index=False)
-clean_outcomes = (clean_cols_and_rows2(outcomes_path)).to_csv("metropolitan_outcomes_data.csv", index=False)
-
+mergedsas = merge_files("data/stop_and_search","metropolitan-stop-and-search.csv")
+mergedsas.to_csv("stop_and_search.csv")
