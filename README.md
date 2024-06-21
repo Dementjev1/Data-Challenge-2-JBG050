@@ -11,16 +11,6 @@ The following Python packages are required to run the code:
 - geopandas
 - matplotlib
 
-## Imports
-
-The following imports are used in the scripts:
-
-import pandas as pd
-import numpy as np
-import geopandas as gpd
-from functools import reduce
-import matplotlib.pyplot as plt
-
 ## Data Files
 The script requires the following data files:
 
