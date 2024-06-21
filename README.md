@@ -10,6 +10,8 @@ The following Python packages are required to run the code:
 - numpy
 - geopandas
 - matplotlib
+- statsmodels == 0.14.2.
+- seaborn == 0.13.2.
 
 ## Data Files
 The script requires the following data files:
@@ -25,6 +27,8 @@ The script requires the following data files:
 - PAS_Dashboard_Borough.csv
 - PAS_stop_and_search.csv
 - twitter_data.csv
+- df_regression_pas_twitter_q131_133_NO_POP.csv
+- granular_twitter_theme.csv
 
 Make sure to modify the full r"file path" with the file needed in case it says the file is not found
 
@@ -35,6 +39,8 @@ Make sure to modify the full r"file path" with the file needed in case it says t
 - 3plotderivedata: Plotting aggregated data (EDA, not actually used in presentation)
 - 4mergepop: Merging aggregated data with population data
 - 5mergePAS: Merging aggregated+population data with PAS data
+- linear_regression: Performs the regressions for the findings
+- 
 ### Jupyter Notebooks:
 The PAS_Cleaning_Preprocessing_Plotting_TWITTER_Plotting.ipynb notebook contains three sections:
 
