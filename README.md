@@ -36,6 +36,8 @@ The script requires the following data files:
 - PAS_stop_and_search.csv
 - twitter_data.csv
 
+Make sure to modify the full r"file path" with the file needed in case it says the file is not found
+
 ## File Descriptions
 ### Py files
 - 1initialcleaning: Further cleaning (filling NA values, renaming borough, etc.)
@@ -51,3 +53,4 @@ The PAS_Cleaning_Preprocessing_Plotting_TWITTER_Plotting.ipynb notebook contains
 - Not Used Code: Contains mainly code used at the initial stages of the project when we thought of using also Crime Data from MOPAC in the analysis. This code has been included for completeness, but none of its parts have been used in the final version or the project.
 
 The Figs presentation.ipynb contains the code used for slides 7 and 8 of the presentation.
+
